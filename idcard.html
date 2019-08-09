@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://wxh5.putibaby.com/show_master?mcode=xca0942a1272203ede6ca3d21fc9911fb&from=singlemessage -->
+<html class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>孔桂兰的名片</title>
+
+    <link rel="stylesheet" href="./files/normalize.css">
+    <link rel="stylesheet" href="./files/app.css">
+
+    <style>
+    .max{width:100%;height:auto;}
+    .min{height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;}
+    </style>
+    <script>
+	$(function(){
+    $('#img').click(function(){
+    $(this).toggleClass('min');
+    $(this).toggleClass('max');
+    });
+    });
+
+    </script>
+    <script src="./files/hm.js"></script>
+    <script src="./files/stats.js" name="MTAH5" sid="500679000" cid="500679004"></script>
+    <script>
+        var NewConfig = {
+            "is_login": false,
+            "is_subscribed": false,
+            "wx_app_id": "wx21c471c62372e379",
+            "user_type": "wx",
+            "platform": "unknown"
+        };
+
+
+        //fix prop name, from noncestr to nonceStr
+        var JsapiConfig = {
+            "debug": false,
+            "noncestr": "0.9302777911070734",
+            "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VFVxs4LHv3winBZ-PpY4YZ_5XTGSHNLbhcQQjaW4AF6OKNImPga4ir_r0lRPxJNlJQ",
+            "timestamp": 1565311245,
+            "url": "http://wxh5.putibaby.com/show_master?mcode=xca0942a1272203ede6ca3d21fc9911fb&from=singlemessage",
+            "appId": "wx21c471c62372e379",
+            "jsApiList": [
+                "onMenuShareTimeline",
+                "onMenuShareAppMessage",
+                "onMenuShareQQ",
+                "onMenuShareWeibo",
+                "chooseImage",
+                "uploadImage",
+                "previewImage",
+                "getLocation"
+            ],
+            "signature": "0dd5b7440b494384e3196cc82b8600c1654ca9d2"
+        };
+        if (/^https:\/\//.test(window.location.origin)) {
+            JsapiConfig = {
+                "debug": false,
+                "noncestr": "0.9303871227893978",
+                "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VFVxs4LHv3winBZ-PpY4YZ_5XTGSHNLbhcQQjaW4AF6OKNImPga4ir_r0lRPxJNlJQ",
+                "timestamp": 1565311245,
+                "url": "https://wxh5.putibaby.com/show_master?mcode=xca0942a1272203ede6ca3d21fc9911fb&from=singlemessage",
+                "appId": "wx21c471c62372e379",
+                "jsApiList": [
+                    "onMenuShareTimeline",
+                    "onMenuShareAppMessage",
+                    "onMenuShareQQ",
+                    "onMenuShareWeibo",
+                    "chooseImage",
+                    "uploadImage",
+                    "previewImage",
+                    "getLocation"
+                ],
+                "signature": "411e546cb475d07346da2333931dcd7037a334c9"
+            };
+        }
+
+        JsapiConfig.nonceStr = JsapiConfig.noncestr;
+        delete JsapiConfig.noncestr;
+
+        function WhenJSReady() {
+            InitWxShare();
+            //React.initializeTouchEvents(true);
+            InitWx();
+
+            // 设置微信分享
+            var share = {
+                "share": {
+                    "title": "我是果嫂孔桂兰，更专业的母婴护理师",
+                    "content": "我已通过菩提果和全国妇联人才开发培训中心认证，请查看我的专业档案",
+                    "image": "http://media-img.putibaby.com/admin_uploaded/eaa192b9150a6b7e19c4eb7878e8e09b.jpg@!small",
+                    "url": "https://wxh5.putibaby.com/show_master?mcode=xca0942a1272203ede6ca3d21fc9911fb"
+                }
+            };
+            if (share.share) {
+                var d = share.share;
+
+                (function () {
+                    var title = /\S/.test(d.title) ? d.title : '菩提果';
+                    var content = /\S/.test(d.content) ? d.content : title;
+                    content = content.length > 100 ? content.substr(0, 100) + '...' : content;
+                    var url = d.url || window.location.href;
+                    var img = d.image || 'http://wxh5.putibaby.com/assets/i/logo.png';
+
+                    if (window && window.ptbb && window.ptbb.setTitle) {
+                        window.ptbb.setTitle('孔桂兰的名片');
+                    }
+                    console.log('WXShare', {
+                        'title': title,
+                        'content': content,
+                        'url': url,
+                        'img': img
+                    })
+                    Util.wxSetDataForShare(
+                        title,
+                        content,
+                        url,
+                        img,
+                        function ok() {
+                        },
+                        function fail() {
+                        }
+                    );
+                })()
+            }
+
+            // 设置额外信息
+            var extra = {};
+            if (extra.extra) {
+                for (var p in extra.extra) {
+                    PTBBAPI.setExtraInfo(p, extra.extra[p]);
+                }
+            }
+
+            // 用React重新渲染页面
+
+            // var props = {
+            //     "data": {
+            //         "info": {
+            //             "id": 40334,
+            //             "username": "1037435",
+            //             "header": {
+            //                 "small": "http://media-img.putibaby.com/admin_uploaded/eaa192b9150a6b7e19c4eb7878e8e09b.jpg@!small",
+            //                 "big": "http://media-img.putibaby.com/admin_uploaded/eaa192b9150a6b7e19c4eb7878e8e09b.jpg@!big",
+            //                 "fixw": "http://media-img.putibaby.com/admin_uploaded/eaa192b9150a6b7e19c4eb7878e8e09b.jpg@!fixw",
+            //                 "raw": "http://media-img.putibaby.com/admin_uploaded/eaa192b9150a6b7e19c4eb7878e8e09b.jpg@!raw"
+            //             },
+            //             "name": "孔桂兰",
+            //             "title": "月嫂",
+            //             "desc": "9年经验 鄂州市，湖北省人 49岁",
+            //             "certificated": true,
+            //             "has_jkz": true,
+            //             "has_myhlsz": true,
+            //             "has_crsz": false,
+            //             "offer_service": true,
+            //             "offer_yuer_service": false,
+            //             "service_price_1": -1,
+            //             "service_price_13": -1,
+            //             "service_price_26": 1180000,
+            //             "contact_phone": "4006188835",
+            //             "contact_city": "武汉",
+            //             "my_intro": "呵护母婴，缘起菩提果。我来自湖北武汉鄂州，2011年从事月嫂行业至今8年，十分热爱这份工作，受过产妇的护理，和新生儿的专业训练，月子餐的营养搭配，产妇的心理疏导，性格非常直爽，爱干净，讲卫生，肯吃苦，主动性强，日常婴儿护理，有早产儿，双胞胎，低体重儿，对宝宝的观察，湿疹，红屁屁的护理，有非常丰富的母婴护照经验，带过的宝宝有50多个，希望能陪你度过愉快的，温馨的月子期…..........接单全国名地。",
+            //             "my_yuer_intro": "呵护母婴，缘起菩提果。我来自鄂州市，湖北省，今年49岁，从事母婴护理9年，希望用我的专业知识，陪伴宝宝健康成长。",
+            //             "has_follow": false,
+            //             "fan_cc": 20,
+            //             "fav_cc": 15,
+            //             "jf": 3424,
+            //             "price": {
+            //                 "market_price": 1380000,
+            //                 "ptg_price": 1380000,
+            //                 "daytime_market_price": 0,
+            //                 "daytime_price": 0
+            //             },
+            //             "price_yuer": {
+            //                 "market_price": 0,
+            //                 "ptg_allday_price": 0,
+            //                 "market_halfday_price": 0,
+            //                 "ptg_halfday_price": 0
+            //             },
+            //             "expect_city": "武汉市，湖北省",
+            //             "ptg_level": "未设置",
+            //             "market_certificated": true,
+            //             "is_disabled": false,
+            //             "is_credited": true,
+            //             "specialities": "",
+            //             "pass_star_class": true,
+            //             "show_yzzs": 0,
+            //             "starzs_list": "",
+            //             "starzs_list_show": 0,
+            //             "gjzs_list": "",
+            //             "gjzs_list_show": 0,
+            //             "yzzs_list": [],
+            //             "level": 10,
+            //             "level_name": "白银用户"
+            //         },
+            //         "xc_list": [{
+            //             "small": "http://media-img.putibaby.com/media/image-ba5026ac479c48c82c4b8a19d88fa01e.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-ba5026ac479c48c82c4b8a19d88fa01e.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-ba5026ac479c48c82c4b8a19d88fa01e.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-ba5026ac479c48c82c4b8a19d88fa01e.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-64151c0a4cffdedbe5b78605e4478179.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-64151c0a4cffdedbe5b78605e4478179.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-64151c0a4cffdedbe5b78605e4478179.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-64151c0a4cffdedbe5b78605e4478179.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-6b4b82c3a452bc7bbad152d9fd92d1df.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-6b4b82c3a452bc7bbad152d9fd92d1df.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-6b4b82c3a452bc7bbad152d9fd92d1df.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-6b4b82c3a452bc7bbad152d9fd92d1df.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-9f5c02f16434c4f5b4a33ecf724cacf0.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-9f5c02f16434c4f5b4a33ecf724cacf0.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-9f5c02f16434c4f5b4a33ecf724cacf0.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-9f5c02f16434c4f5b4a33ecf724cacf0.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-424ea4848a928150c7c7105c4a86e81a.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-424ea4848a928150c7c7105c4a86e81a.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-424ea4848a928150c7c7105c4a86e81a.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-424ea4848a928150c7c7105c4a86e81a.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-f27051a0d8c9810e6ff1d7e4a4219368.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-f27051a0d8c9810e6ff1d7e4a4219368.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-f27051a0d8c9810e6ff1d7e4a4219368.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-f27051a0d8c9810e6ff1d7e4a4219368.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-bc81965a1a9e990ea064f6ea1f60a996.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-bc81965a1a9e990ea064f6ea1f60a996.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-bc81965a1a9e990ea064f6ea1f60a996.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-bc81965a1a9e990ea064f6ea1f60a996.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-35697f44b6e9f0a3dea748268bb8342f.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-35697f44b6e9f0a3dea748268bb8342f.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-35697f44b6e9f0a3dea748268bb8342f.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-35697f44b6e9f0a3dea748268bb8342f.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-abb06bbd8631434b7374bfdb7255e989.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-abb06bbd8631434b7374bfdb7255e989.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-abb06bbd8631434b7374bfdb7255e989.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-abb06bbd8631434b7374bfdb7255e989.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-8f9b4b9cd60768994c2e659964ed48ac.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-8f9b4b9cd60768994c2e659964ed48ac.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-8f9b4b9cd60768994c2e659964ed48ac.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-8f9b4b9cd60768994c2e659964ed48ac.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-5128c2a3f0cf287283515e3f38cc9510.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-5128c2a3f0cf287283515e3f38cc9510.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-5128c2a3f0cf287283515e3f38cc9510.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-5128c2a3f0cf287283515e3f38cc9510.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-6bd2f390b5cf9e0799876fab533839c4.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-6bd2f390b5cf9e0799876fab533839c4.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-6bd2f390b5cf9e0799876fab533839c4.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-6bd2f390b5cf9e0799876fab533839c4.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-3accb56a747ff0e8993ada1835fc70f3.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-3accb56a747ff0e8993ada1835fc70f3.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-3accb56a747ff0e8993ada1835fc70f3.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-3accb56a747ff0e8993ada1835fc70f3.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-21cea6f1efaa74a6f2a6ade239c48181.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-21cea6f1efaa74a6f2a6ade239c48181.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-21cea6f1efaa74a6f2a6ade239c48181.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-21cea6f1efaa74a6f2a6ade239c48181.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-ccd9ba4de7f87cb7f83d93630cb577a3.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-ccd9ba4de7f87cb7f83d93630cb577a3.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-ccd9ba4de7f87cb7f83d93630cb577a3.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-ccd9ba4de7f87cb7f83d93630cb577a3.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-7dc345477242d018a5e81bd6f2a56ac5.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-7dc345477242d018a5e81bd6f2a56ac5.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-7dc345477242d018a5e81bd6f2a56ac5.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-7dc345477242d018a5e81bd6f2a56ac5.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-062f4d373772f872e3163e8851888790.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-062f4d373772f872e3163e8851888790.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-062f4d373772f872e3163e8851888790.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-062f4d373772f872e3163e8851888790.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-cc64317869ddeee52bf19e848a0669b8.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-cc64317869ddeee52bf19e848a0669b8.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-cc64317869ddeee52bf19e848a0669b8.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-cc64317869ddeee52bf19e848a0669b8.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-b5f13bb885feb2f6bfe0615094e0bee0.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-b5f13bb885feb2f6bfe0615094e0bee0.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-b5f13bb885feb2f6bfe0615094e0bee0.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-b5f13bb885feb2f6bfe0615094e0bee0.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-66fa77c862101c10e97720551aee616a.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-66fa77c862101c10e97720551aee616a.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-66fa77c862101c10e97720551aee616a.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-66fa77c862101c10e97720551aee616a.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-376e144512ae99dbd444f1add2301d22.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-376e144512ae99dbd444f1add2301d22.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-376e144512ae99dbd444f1add2301d22.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-376e144512ae99dbd444f1add2301d22.jpg@!raw"
+            //         }, {
+            //             "small": "http://media-img.putibaby.com/media/image-67206aae99279f1c6c0aaa87fc513176.jpg@!small",
+            //             "big": "http://media-img.putibaby.com/media/image-67206aae99279f1c6c0aaa87fc513176.jpg@!big",
+            //             "fixw": "http://media-img.putibaby.com/media/image-67206aae99279f1c6c0aaa87fc513176.jpg@!fixw",
+            //             "raw": "http://media-img.putibaby.com/media/image-67206aae99279f1c6c0aaa87fc513176.jpg@!raw"
+            //         }],
+            //         "skill_list": [{"id": 1, "title": "产妇护理", "ok_cc": 7, "total_cc": 7, "order": 1}, {
+            //             "id": 2,
+            //             "title": "新生儿护理",
+            //             "ok_cc": 12,
+            //             "total_cc": 12,
+            //             "order": 2
+            //         }, {"id": 3, "title": "婴儿护理", "ok_cc": 7, "total_cc": 8, "order": 3}, {
+            //             "id": 4,
+            //             "title": "其他服务",
+            //             "ok_cc": 4,
+            //             "total_cc": 4,
+            //             "order": 4
+            //         }],
+            //         "skill_list_yuer": [{"id": 1, "title": "宝宝日常照料", "ok_cc": 0, "total_cc": 7, "order": 1}, {
+            //             "id": 2,
+            //             "title": "宝宝早期教育",
+            //             "ok_cc": 0,
+            //             "total_cc": 6,
+            //             "order": 2
+            //         }, {"id": 3, "title": "宝宝日常保健", "ok_cc": 0, "total_cc": 5, "order": 3}, {
+            //             "id": 4,
+            //             "title": "其他服务",
+            //             "ok_cc": 0,
+            //             "total_cc": 2,
+            //             "order": 4
+            //         }],
+            //         "shanghu_data": {"cc": 21, "days": 589, "feedback_cc": 21, "feedback_total_star": 105},
+            //         "forum_data": {"post_cc": 13, "post_jing_cc": 8, "reply_cc": 246, "zan_cc": 374},
+            //         "it_is_me": false,
+            //         "interview_video_list": [{
+            //             "image": {
+            //                 "small": "http://media-img.putibaby.com/media/image-be5bf9d2dd8cbf2f972f4054fe6ecd96.jpg@!small",
+            //                 "big": "http://media-img.putibaby.com/media/image-be5bf9d2dd8cbf2f972f4054fe6ecd96.jpg@!big",
+            //                 "fixw": "http://media-img.putibaby.com/media/image-be5bf9d2dd8cbf2f972f4054fe6ecd96.jpg@!fixw",
+            //                 "raw": "http://media-img.putibaby.com/media/image-be5bf9d2dd8cbf2f972f4054fe6ecd96.jpg@!raw"
+            //             }, "video": "http://media.putibaby.com/media/video-b05dbd6c2dc0e112128a3415550faee4.mp4"
+            //         }],
+            //         "exam_info": {"finished_at": "2018-09-10", "level": "优良", "time": 1637},
+            //         "dqap_list": [{
+            //             "id": 12779,
+            //             "type": 4,
+            //             "from_day": "2019-04-26",
+            //             "to_day": "2019-05-23",
+            //             "reason": "私单"
+            //         }, {
+            //             "id": 12787,
+            //             "type": 4,
+            //             "from_day": "2019-05-30",
+            //             "to_day": "2019-06-26",
+            //             "reason": "私单"
+            //         }, {
+            //             "id": 12788,
+            //             "type": 4,
+            //             "from_day": "2019-06-30",
+            //             "to_day": "2019-07-26",
+            //             "reason": "私单"
+            //         }, {"id": 21569, "type": 1, "from_day": "2019-07-04", "to_day": "2019-08-15", "reason": "已上户"}],
+            //         "last_feedback": {
+            //             "shanghu_at": "2019-04-25",
+            //             "end_at": "2019-05-20",
+            //             "days": 26,
+            //             "mama_info": {
+            //                 "header": {
+            //                     "small": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJTMcUWtEjw2P3ZOUSYWu6yaNM52fs1qEiaF7W44W0QXfm1VRDbOmdC9Td12iay3jEy0usl1F2ktrgQ/132",
+            //                     "big": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJTMcUWtEjw2P3ZOUSYWu6yaNM52fs1qEiaF7W44W0QXfm1VRDbOmdC9Td12iay3jEy0usl1F2ktrgQ/132",
+            //                     "fixw": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJTMcUWtEjw2P3ZOUSYWu6yaNM52fs1qEiaF7W44W0QXfm1VRDbOmdC9Td12iay3jEy0usl1F2ktrgQ/132",
+            //                     "raw": "http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJTMcUWtEjw2P3ZOUSYWu6yaNM52fs1qEiaF7W44W0QXfm1VRDbOmdC9Td12iay3jEy0usl1F2ktrgQ/132"
+            //                 }, "name": "乐迪", "role": "妈妈", "phone_number": "185****4057"
+            //             },
+            //             "record_cc": 0,
+            //             "care_cc": 0,
+            //             "feedback": {
+            //                 "total_star": 5,
+            //                 "comment": "感谢孔桂兰阿姨26天的照顾和陪伴。阿姨个人性格开朗很好沟通。家里的大宝也很喜欢阿姨。阿姨照顾宝宝很细心。夜里宝宝哭，阿姨总是第一时间醒来喂奶，拍嗝。每天给宝宝洗澡。我的宝宝爱溢奶，阿姨总是第一时间清理口水巾，衣服脏了换衣服，给宝宝拍嗝。不但宝宝个人卫生搞得好，阿姨个人卫生也很讲究。下户当天把用过的被套床单全部清洗干净了。阿姨的细心照顾宝宝第八天脐带顺利脱落，恢复的很好。宝宝很喜欢阿姨，阿姨都会唱儿歌给宝听，陪他聊天。阿姨在家这段时间帮助我们很多，一家人相处的很好。阿姨也会不定时给宝宝称体重，下户的时间宝涨了两斤，全家人都很高兴。祝孔桂兰阿姨工作顺利\n",
+            //                 "pics": [{
+            //                     "small": "http://media-img.putibaby.com/media/image-49991e643f3949a14491c97ed9157946.jpg@!small",
+            //                     "big": "http://media-img.putibaby.com/media/image-49991e643f3949a14491c97ed9157946.jpg@!big",
+            //                     "fixw": "http://media-img.putibaby.com/media/image-49991e643f3949a14491c97ed9157946.jpg@!fixw",
+            //                     "raw": "http://media-img.putibaby.com/media/image-49991e643f3949a14491c97ed9157946.jpg@!raw"
+            //                 }, {
+            //                     "small": "http://media-img.putibaby.com/media/image-acb6f5b1f96b107480429aaabcb0c303.jpg@!small",
+            //                     "big": "http://media-img.putibaby.com/media/image-acb6f5b1f96b107480429aaabcb0c303.jpg@!big",
+            //                     "fixw": "http://media-img.putibaby.com/media/image-acb6f5b1f96b107480429aaabcb0c303.jpg@!fixw",
+            //                     "raw": "http://media-img.putibaby.com/media/image-acb6f5b1f96b107480429aaabcb0c303.jpg@!raw"
+            //                 }, {
+            //                     "small": "http://media-img.putibaby.com/media/image-ed494da0314e4c88bdcf32676a571282.jpg@!small",
+            //                     "big": "http://media-img.putibaby.com/media/image-ed494da0314e4c88bdcf32676a571282.jpg@!big",
+            //                     "fixw": "http://media-img.putibaby.com/media/image-ed494da0314e4c88bdcf32676a571282.jpg@!fixw",
+            //                     "raw": "http://media-img.putibaby.com/media/image-ed494da0314e4c88bdcf32676a571282.jpg@!raw"
+            //                 }],
+            //                 "type": "real",
+            //                 "star_1": 5,
+            //                 "star_2": 5,
+            //                 "star_3": 5,
+            //                 "star_4": 5,
+            //                 "star_5": 5,
+            //                 "star_6": 5,
+            //                 "ptg_reply": "尊敬的客户，您好，看到您的好评和满意，我们动力满满，希望您把菩提果推荐给身边更多的宝妈，在此祝您生活愉快，宝宝茁壮成长(*^__^*)"
+            //             },
+            //             "type": "history",
+            //             "master_type": "yuesao"
+            //         },
+            //         "zs_intro": {
+            //             "starzs_intro": "母婴护理师专项技能培训证书\n菩提果携手全国妇联人才开发培训中心联合培训，根据行业技能标准设定基础课程及各项专项课程，经考试合格颁发《专项技能培训证书》，为母婴、育儿行业输送更优秀、更专业的“果嫂”。",
+            //             "gjzs_intro": "国际证书\n参与国际游学，接受培训国母婴专业技能的提升课程，根据培训国母婴相关标准进行考核后获取了专项培训国际认证证书。取得此证书的从业人员，在培训国可获得母婴行业从业资质！"
+            //         },
+            //         "ptg_class_list": [{
+            //             "class_id": 238,
+            //             "class_subject": "产后修复基础班武汉第5期",
+            //             "class_score": 30,
+            //             "class_icon": "http://media.putibaby.com/admin_uploaded/e777c4cca9df9a1eea8295040e5d505e.jpg",
+            //             "class_public_name": "产后修复基础班"
+            //         }, {
+            //             "class_id": 242,
+            //             "class_subject": "星级服务实训班武汉8月第1期",
+            //             "class_score": 15,
+            //             "class_icon": "http://media.putibaby.com/admin_uploaded/374de6cbf37f303fac4b8cc4df557122.jpg",
+            //             "class_public_name": "星级服务实训班"
+            //         }, {
+            //             "class_id": 578,
+            //             "class_subject": "小儿推拿实用技能课（武汉）第7期",
+            //             "class_score": 5,
+            //             "class_icon": "http://media.putibaby.com/admin_uploaded/3e1a2b0ef946dc1f4e6e0ee73bed90e7.jpg",
+            //             "class_public_name": "小儿推拿实用技能课"
+            //         }, {
+            //             "class_id": 19,
+            //             "class_subject": "产后修复之子宫复旧",
+            //             "class_score": 3,
+            //             "class_icon": "http://media.putibaby.com/admin_uploaded/4edf7ece180ce4be9816326155f82648.jpg",
+            //             "class_public_name": "产后修复之子宫复旧"
+            //         }],
+            //         "pass_star_class": true,
+            //         "isYuer": false
+            //     }
+            // };
+            var info = {
+                'data': props.data,
+                'config': NewConfig
+            };
+            if (props.extra) {
+                for (var p in props.extra) {
+                    info[p] = props.extra[p];
+                }
+            }
+            setTimeout(function () {
+                ReactDOM.render(React.createElement(MasterCard2, info), document.getElementById('root'));
+            }, 0); // 等一下再渲染
+
+        }
+    </script>
+    <script>
+        var _mtac = {};
+        (function () {
+            var mta = document.createElement("script");
+            mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500679000");
+            mta.setAttribute("cid", "500679004");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
+    </script>
+    <script src="./files/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            document.getElementById('audio').play();
+        }, false);
+    </script>
+</head>
+<body style="background: rgb(245, 245, 229);">
+<div id="root">
+    <div style="padding-top:1px;background:#F5F5E5;font-size:14px;" data-reactid=".0">
+        <div style="margin:10px;height:150px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;position:relative;overflow:hidden;background-image:url(https://h5.putibaby.com/assets/i/blur_15.jpg);background-size:cover;"
+             data-reactid=".0.1"><img src="./files/yinzhang.png"
+                                      style="width:70px;top:5px;right:27px;position:absolute;cursor:pointer;"
+                                      data-reactid=".0.1.0">
+            <div style="width:50px;height:50px;top:10px;left:10px;position:absolute;border-radius:2px;border:1px solid #fff;padding:1px;"
+                 data-reactid=".0.1.1"><img src="./files/kongguilan.png"
+                                            style="width:100%;height:100%;border-radius:2px;" data-reactid=".0.1.1.0">
+            </div>
+            <div style="position:absolute;top:10px;left:80px;" data-reactid=".0.1.2"><span
+                    data-reactid=".0.1.2.0">孔桂兰</span><img src="./files/guosao.png"
+                                                           style="height:15px;margin-left:4px;vertical-align:-3px;"
+                                                           data-reactid=".0.1.2.1"></div>
+            <div style="position:absolute;top:30px;left:80px;" data-reactid=".0.1.3">9年经验 -- 52岁</div>
+            <div style="position:absolute;top:50px;left:80px;" data-reactid=".0.1.4"><span
+                    data-reactid=".0.1.4.0">户籍: </span><span data-reactid=".0.1.4.1">湖北省钟祥市</span></div>
+            <div style="position:absolute;top:80px;left:10px;cursor:pointer;" data-reactid=".0.1.5"><img
+                    src="./files/master_card_certificated.png"
+                    style="width:12px;display:inline-block;margin-right:4px;position:relative;top:0;"
+                    data-reactid=".0.1.5.0"><span data-reactid=".0.1.5.1">身份认证</span></div>
+            <div style="position:absolute;top:80px;left:100px;cursor:pointer;" data-reactid=".0.1.6"><img
+                    src="./files/market_certificated.png"
+                    style="width:12px;display:inline-block;margin-right:4px;position:relative;top:0;"
+                    data-reactid=".0.1.6.0"><span data-reactid=".0.1.6.1">接单认证</span></div>
+            <!--<div style="position:absolute;top:80px;right:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;height:20px;width:100px;text-align:center;line-height:20px;background-color:rgba(255,255,255,0.2);color:#fff;cursor:pointer;"-->
+                 <!--data-reactid=".0.1.7">基本资料详情-->
+            <!--</div>-->
+            <!--<div style="position:absolute;left:0;bottom:40px;width:100%;height:2px;background:url(/assets/i/show_master_card_footer_hb.png);background-size:contain;"-->
+                 <!--data-reactid=".0.1.8"></div>-->
+            <div style="position:absolute;bottom:0;left:0;width:100%;height:40px;background:rgba(193,230,78,0.2);"
+                 data-reactid=".0.1.9">
+                <table style="width:100%;height:30px;margin-top:5px;" data-reactid=".0.1.9.0">
+                    <tbody data-reactid=".0.1.9.0.0">
+                    <tr data-reactid=".0.1.9.0.0.0">
+                        <td style="text-align:center;width:50%;" data-reactid=".0.1.9.0.0.0.0"><span
+                                data-reactid=".0.1.9.0.0.0.0.0">客户评分: </span><span
+                                data-reactid=".0.1.9.0.0.0.0.1">5.0</span></td>
+                        <td style="text-align:center;border-left:1px solid rgba(0,0,0,0.05);"
+                            data-reactid=".0.1.9.0.0.0.1"><span data-reactid=".0.1.9.0.0.0.1.0">收藏: </span><span
+                                data-reactid=".0.1.9.0.0.0.1.1">150</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.2">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#6BD4FA;"
+                 data-reactid=".0.2.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.2.0.0"><img
+                        src="./files/card_circle_3.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.2.0.0.0"><span data-reactid=".0.2.0.0.1">月嫂自我介绍</span></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;padding:15px 10px;" data-reactid=".0.2.1">
+                呵护母婴，缘起菩提。我来自湖北钟祥，2011年从事月嫂行业至今8年，十分热爱这份工作，受过产妇的护理，和新生儿的专业训练，月子餐的营养搭配，产妇的心理疏导，性格非常直爽，爱干净，讲卫生，肯吃苦，主动性强，日常婴儿护理，有早产儿，双胞胎，低体重儿，对宝宝的观察，湿疹，红屁屁的护理，有非常丰富的母婴护照经验，带过的宝宝有50多个，希望能陪你度过愉快的，温馨的月子期…..........接单全国名地。
+            </div>
+            <!--<div style="height:28px;line-height:28px;background:#fff;text-align:center;cursor:pointer;color:#A2D016;font-size:13px;"-->
+                 <!--data-reactid=".0.2.2"><span data-reactid=".0.2.2.0">展开</span><img src="./files/xl_down.png"-->
+                                                                                   <!--style="width:15px;height:7px;"-->
+                                                                                   <!--data-reactid=".0.2.2.1"></div>-->
+        </div>
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.5">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#A2D016;"
+                 data-reactid=".0.5.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.5.0.0"><img
+                        src="./files/card_circle_1.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.5.0.0.0"><span data-reactid=".0.5.0.0.1">动感相册</span></div>
+                <div style="float:right;margin-right:10px;" data-reactid=".0.5.0.1"><span
+                        data-reactid=".0.5.0.1.0">查看相册</span>
+                    <img src="./files/right_white.png"
+                                                                  style="width:8px;display:inline-block;margin-left:5px;position:relative;top:2px;"
+                                                                  data-reactid=".0.5.0.1.1">
+                </div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;" data-reactid=".0.5.1">
+                <div style="white-space:nowrap;overflow:auto;padding:10px;" data-reactid=".0.5.1.0"><img id='img' class='min'
+                        src="./files/image-ba5026ac479c48c82c4b8a19d88fa01e.jpg@!big"
+                        data-reactid=".0.5.1.0.0"><img
+                        src="./files/image-64151c0a4cffdedbe5b78605e4478179.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.1"><img
+                        src="./files/image-6b4b82c3a452bc7bbad152d9fd92d1df.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.2"><img
+                        src="./files/image-9f5c02f16434c4f5b4a33ecf724cacf0.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.3"><img
+                        src="./files/image-424ea4848a928150c7c7105c4a86e81a.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.4"><img
+                        src="./files/image-f27051a0d8c9810e6ff1d7e4a4219368.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.5"><img
+                        src="./files/image-bc81965a1a9e990ea064f6ea1f60a996.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.6"><img
+                        src="./files/image-35697f44b6e9f0a3dea748268bb8342f.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.7"><img
+                        src="./files/image-abb06bbd8631434b7374bfdb7255e989.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.8"><img
+                        src="./files/image-8f9b4b9cd60768994c2e659964ed48ac.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.9"><img
+                        src="./files/image-5128c2a3f0cf287283515e3f38cc9510.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.a"><img
+                        src="./files/image-6bd2f390b5cf9e0799876fab533839c4.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.b"><img
+                        src="./files/image-3accb56a747ff0e8993ada1835fc70f3.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.c"><img
+                        src="./files/image-21cea6f1efaa74a6f2a6ade239c48181.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.d"><img
+                        src="./files/image-ccd9ba4de7f87cb7f83d93630cb577a3.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.e"><img
+                        src="./files/image-7dc345477242d018a5e81bd6f2a56ac5.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.f"><img
+                        src="./files/image-062f4d373772f872e3163e8851888790.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.g"><img
+                        src="./files/image-cc64317869ddeee52bf19e848a0669b8.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.h"><img
+                        src="./files/image-b5f13bb885feb2f6bfe0615094e0bee0.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.i"><img
+                        src="./files/image-66fa77c862101c10e97720551aee616a.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.j"><img
+                        src="./files/image-376e144512ae99dbd444f1add2301d22.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.k"><img
+                        src="./files/image-67206aae99279f1c6c0aaa87fc513176.jpg@!big"
+                        style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"
+                        data-reactid=".0.5.1.0.l"></div>
+            </div>
+        </div>
+        <!--<div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"-->
+             <!--data-reactid=".0.6">-->
+            <!--<div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#F16B57;"-->
+                 <!--data-reactid=".0.6.0">-->
+                <!--<div style="float:left;margin-left:10px;" data-reactid=".0.6.0.0"><img-->
+                        <!--src="./files/card_circle_2.png"-->
+                        <!--style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"-->
+                        <!--data-reactid=".0.6.0.0.0"><span data-reactid=".0.6.0.0.1">月嫂服务项目</span></div>-->
+                <!--<div style="float:right;margin-right:10px;" data-reactid=".0.6.0.1"><span-->
+                        <!--data-reactid=".0.6.0.1.0">查看更多</span><img src="./files/right_white.png"-->
+                                                                  <!--style="width:8px;display:inline-block;margin-left:5px;position:relative;top:2px;"-->
+                                                                  <!--data-reactid=".0.6.0.1.1"></div>-->
+            <!--</div>-->
+            <!--<div style="clear:both;background:#fff;color:#333;font-sie:16px;" data-reactid=".0.6.1">-->
+                <!--<table style="width:100%;height:50px;border-bottom:1px solid #eee;" data-reactid=".0.6.1.0">-->
+                    <!--<tbody data-reactid=".0.6.1.0.0">-->
+                    <!--<tr data-reactid=".0.6.1.0.0.0">-->
+                        <!--<td style="text-align:center;" data-reactid=".0.6.1.0.0.0.0"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.0.0">产妇护理</span><br data-reactid=".0.6.1.0.0.0.0.1"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.0.2">7</span></td>-->
+                        <!--<td style="text-align:center;border-left:1px solid #eee;border-right:1px solid #eee;"-->
+                            <!--data-reactid=".0.6.1.0.0.0.1"><span data-reactid=".0.6.1.0.0.0.1.0">新生儿护理</span><br-->
+                                <!--data-reactid=".0.6.1.0.0.0.1.1"><span data-reactid=".0.6.1.0.0.0.1.2">12</span></td>-->
+                        <!--<td style="text-align:center;border-left:1px solid #eee;" data-reactid=".0.6.1.0.0.0.2"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.2.0">婴儿护理</span><br data-reactid=".0.6.1.0.0.0.2.1"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.2.2">7</span></td>-->
+                        <!--<td style="text-align:center;" data-reactid=".0.6.1.0.0.0.3"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.3.0">其他服务</span><br data-reactid=".0.6.1.0.0.0.3.1"><span-->
+                                <!--data-reactid=".0.6.1.0.0.0.3.2">4</span></td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+                <!--<div style="padding:10px;line-height:1.5;" data-reactid=".0.6.1.1">-->
+                    <!--<table style="width:100%;" data-reactid=".0.6.1.1.0">-->
+                        <!--<tbody data-reactid=".0.6.1.1.0.0">-->
+                        <!--<tr data-reactid=".0.6.1.1.0.0.1">-->
+                            <!--<td data-reactid=".0.6.1.1.0.0.1.0"><span data-reactid=".0.6.1.1.0.0.1.0.0">全天菩提果服务价&nbsp;&nbsp;&nbsp;</span><span-->
+                                    <!--style="color:#C32218;" data-reactid=".0.6.1.1.0.0.1.0.1"><span-->
+                                    <!--data-reactid=".0.6.1.1.0.0.1.0.1.0">￥</span><span-->
+                                    <!--data-reactid=".0.6.1.1.0.0.1.0.1.1">13800</span></span></td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.9">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#6BD4FA;"
+                 data-reactid=".0.9.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.9.0.0"><img
+                        src="./files/card_circle_3.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.9.0.0.0"><span data-reactid=".0.9.0.0.1">客户评价</span></div>
+                <div style="float:right;margin-right:10px;" data-reactid=".0.9.0.1"><span
+                        data-reactid=".0.9.0.1.0"><span data-reactid=".0.9.0.1.0.0">共</span><span
+                        data-reactid=".0.9.0.1.0.1">21</span><span data-reactid=".0.9.0.1.0.2">条评价</span></span><img
+                        src="./files/right_white.png"
+                        style="width:8px;display:inline-block;margin-left:5px;position:relative;top:2px;"
+                        data-reactid=".0.9.0.1.1"></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;" data-reactid=".0.9.1">
+                <div data-reactid=".0.9.1.0">
+                    <div style="height:30px;line-height:30px;border-bottom:1px solid #eee;" data-reactid=".0.9.1.0.0">
+                        <div style="float:left;margin-left:10px;" data-reactid=".0.9.1.0.0.0">综合评价</div>
+                        <div style="float:right;margin-right:10px;" data-reactid=".0.9.1.0.0.1"><img
+                                style="width:15px;display:inline-block;margin-right:2px;position:relative;top:0;"
+                                src="./files/select_master_star.png" data-reactid=".0.9.1.0.0.1.0"><img
+                                style="width:15px;display:inline-block;margin-right:2px;position:relative;top:0;"
+                                src="./files/select_master_star.png" data-reactid=".0.9.1.0.0.1.1"><img
+                                style="width:15px;display:inline-block;margin-right:2px;position:relative;top:0;"
+                                src="./files/select_master_star.png" data-reactid=".0.9.1.0.0.1.2"><img
+                                style="width:15px;display:inline-block;margin-right:2px;position:relative;top:0;"
+                                src="./files/select_master_star.png" data-reactid=".0.9.1.0.0.1.3"><img
+                                style="width:15px;display:inline-block;margin-right:2px;position:relative;top:0;"
+                                src="./files/select_master_star.png" data-reactid=".0.9.1.0.0.1.4"></div>
+                        <div style="clear:both;" data-reactid=".0.9.1.0.0.2"></div>
+                    </div>
+                    <div style="height:30px;line-height:30px;border-bottom:1px solid #eee;" data-reactid=".0.9.1.0.1">
+                        <div style="float:left;margin-left:10px;" data-reactid=".0.9.1.0.1.0"><span
+                                data-reactid=".0.9.1.0.1.0.0">2019-04-25</span><span
+                                data-reactid=".0.9.1.0.1.0.1"> 至 </span><span
+                                data-reactid=".0.9.1.0.1.0.2">2019-05-20</span></div>
+                        <div style="float:right;margin-right:10px;" data-reactid=".0.9.1.0.1.1"><span
+                                data-reactid=".0.9.1.0.1.1.0">共</span><span data-reactid=".0.9.1.0.1.1.1">26</span><span
+                                data-reactid=".0.9.1.0.1.1.2">天</span></div>
+                        <div style="clear:both;" data-reactid=".0.9.1.0.1.2"></div>
+                    </div>
+                    <div style="position:relative;height:70px;border-bottom:1px solid #eee;" data-reactid=".0.9.1.0.2">
+                        <img src="./files/132"
+                             style="height:50px;width:50px;position:absolute;left:10px;top:10px;border-radius:5px;"
+                             data-reactid=".0.9.1.0.2.0">
+                        <div style="font-size:15px;position:absolute;top:11px;left:75px;line-height:16px;"
+                             data-reactid=".0.9.1.0.2.1"><span data-reactid=".0.9.1.0.2.1.0">乐迪</span><span
+                                data-reactid=".0.9.1.0.2.1.1">&nbsp;</span><span data-reactid=".0.9.1.0.2.1.2">妈妈</span><span
+                                data-reactid=".0.9.1.0.2.1.3">(</span><span
+                                data-reactid=".0.9.1.0.2.1.4">历史客户</span><span
+                                data-reactid=".0.9.1.0.2.1.5">&nbsp;</span><span
+                                data-reactid=".0.9.1.0.2.1.6">月嫂单</span><span data-reactid=".0.9.1.0.2.1.7">)</span>
+                        </div>
+                        <div style="position:absolute;top:40px;color:#999;left:75px;" data-reactid=".0.9.1.0.2.2"><span
+                                data-reactid=".0.9.1.0.2.2.0">手机: </span><span
+                                data-reactid=".0.9.1.0.2.2.1">185****4057</span></div>
+                    </div>
+                    <div style="padding:10px;background-size:120px;background-position:center -30px;background-repeat:repeat-y;"
+                         data-reactid=".0.9.1.0.4">
+                        <div style="font-size:16px;" data-reactid=".0.9.1.0.4.0">客户评价:</div>
+                        <div style="font-size:14px;" data-reactid=".0.9.1.0.4.1">
+                            感谢孔桂兰阿姨26天的照顾和陪伴。阿姨个人性格开朗很好沟通。家里的大宝也很喜欢阿姨。阿姨照顾宝宝很细心。夜里宝宝哭，阿姨总是第一时间醒来喂奶，拍嗝。每天给宝宝洗澡。我的宝宝爱溢奶，阿姨总是第一时间清理口水巾，衣服脏了换衣服，给宝宝拍嗝。不但宝宝个人卫生搞得好，阿姨个人卫生也很讲究。下户当天把用过的被套床单全部清洗干净了。阿姨的细心照顾宝宝第八天脐带顺利脱落，恢复的很好。宝宝很喜欢阿姨，阿姨都会唱儿歌给宝听，陪他聊天。阿姨在家这段时间帮助我们很多，一家人相处的很好。阿姨也会不定时给宝宝称体重，下户的时间宝涨了两斤，全家人都很高兴。祝孔桂兰阿姨工作顺利
+                        </div>
+                    </div>
+                    <div style="padding:10px;" data-reactid=".0.9.1.0.5"><img
+                            src="./files/image-49991e643f3949a14491c97ed9157946.jpg@!big"
+                            style="width:50px;height:50px;border-radius:5px;display:inline-block;margin-right:5px;cursor:pointer;"
+                            data-reactid=".0.9.1.0.5.0"><img
+                            src="./files/image-acb6f5b1f96b107480429aaabcb0c303.jpg@!big"
+                            style="width:50px;height:50px;border-radius:5px;display:inline-block;margin-right:5px;cursor:pointer;"
+                            data-reactid=".0.9.1.0.5.1"><img
+                            src="./files/image-ed494da0314e4c88bdcf32676a571282.jpg@!big"
+                            style="width:50px;height:50px;border-radius:5px;display:inline-block;margin-right:5px;cursor:pointer;"
+                            data-reactid=".0.9.1.0.5.2"></div>
+                    <div style="margin-left:10px;margin-right:10px;border-top:1px solid #eee;padding-top:10px;padding-bottom:10px;"
+                         data-reactid=".0.9.1.0.6"><img style="width:10px;margin-right:5px;"
+                                                        src="./files/fankui.png"
+                                                        data-reactid=".0.9.1.0.6.0"><span
+                            style="color:#88bd4e;font-size:14px;" data-reactid=".0.9.1.0.6.1">菩提果客服反馈：</span><span
+                            style="color:#666666;font-size:14px;" data-reactid=".0.9.1.0.6.2">尊敬的客户，您好，看到您的好评和满意，我们动力满满，希望您把菩提果推荐给身边更多的宝妈，在此祝您生活愉快，宝宝茁壮成长(*^__^*)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"-->
+             <!--data-reactid=".0.a">-->
+            <!--<div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#A2D016;"-->
+                 <!--data-reactid=".0.a.0">-->
+                <!--<div style="float:left;margin-left:10px;" data-reactid=".0.a.0.0"><img-->
+                        <!--src="./files/card_circle_1.png"-->
+                        <!--style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"-->
+                        <!--data-reactid=".0.a.0.0.0"><span data-reactid=".0.a.0.0.1">月嫂档期安排</span></div>-->
+                <!--<div style="float:right;margin-right:10px;" data-reactid=".0.a.0.1"><span data-reactid=".0.a.0.1.0">查看详细日期</span><img-->
+                        <!--src="./files/right_white.png"-->
+                        <!--style="width:8px;display:inline-block;margin-left:5px;position:relative;top:2px;"-->
+                        <!--data-reactid=".0.a.0.1.1"></div>-->
+            <!--</div>-->
+            <!--<div style="clear:both;background:#fff;color:#333;padding:10px;" data-reactid=".0.a.1">-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.0">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.0.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.0.0.0">-->
+                            <!--<div style="width:30px;height:15px;" data-reactid=".0.a.1.0.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:15px;" data-reactid=".0.a.1.0.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.0.1"><span data-reactid=".0.a.1.0.1.0">8</span><span-->
+                            <!--data-reactid=".0.a.1.0.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.1">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.1.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.1.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.1.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.1.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.1.1"><span data-reactid=".0.a.1.1.1.0">9</span><span-->
+                            <!--data-reactid=".0.a.1.1.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.2">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.2.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.2.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.2.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.2.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.2.1"><span data-reactid=".0.a.1.2.1.0">10</span><span-->
+                            <!--data-reactid=".0.a.1.2.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.3">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.3.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.3.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.3.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.3.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.3.1"><span data-reactid=".0.a.1.3.1.0">11</span><span-->
+                            <!--data-reactid=".0.a.1.3.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.4">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.4.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.4.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.4.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.4.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.4.1"><span data-reactid=".0.a.1.4.1.0">12</span><span-->
+                            <!--data-reactid=".0.a.1.4.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.5">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.5.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.5.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.5.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.5.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.5.1"><span data-reactid=".0.a.1.5.1.0">1</span><span-->
+                            <!--data-reactid=".0.a.1.5.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.6">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.6.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.6.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.6.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.6.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.6.1"><span data-reactid=".0.a.1.6.1.0">2</span><span-->
+                            <!--data-reactid=".0.a.1.6.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.7">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.7.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.7.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.7.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.7.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.7.1"><span data-reactid=".0.a.1.7.1.0">3</span><span-->
+                            <!--data-reactid=".0.a.1.7.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.8">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.8.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.8.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.8.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.8.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.8.1"><span data-reactid=".0.a.1.8.1.0">4</span><span-->
+                            <!--data-reactid=".0.a.1.8.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.9">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.9.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.9.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.9.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.9.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.9.1"><span data-reactid=".0.a.1.9.1.0">5</span><span-->
+                            <!--data-reactid=".0.a.1.9.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.a">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.a.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.a.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.a.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.a.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.a.1"><span data-reactid=".0.a.1.a.1.0">6</span><span-->
+                            <!--data-reactid=".0.a.1.a.1.1">月</span></div>-->
+                <!--</div>-->
+                <!--<div style="width:30px;height:30px;display:inline-block;margin-right:15px;border:1px solid #A2D016;border-radius:16px;line-height:30px;text-align:center;overflow:hidden;color:#666;font-size:16px;position:relative;"-->
+                     <!--data-reactid=".0.a.1.b">-->
+                    <!--<div style="width:100%;height:100%;position:absolute;left:0;bottom:0;" data-reactid=".0.a.1.b.0">-->
+                        <!--<div style="width:100%;height:100%;overflow:hidden;border-radius:16px;"-->
+                             <!--data-reactid=".0.a.1.b.0.0">-->
+                            <!--<div style="width:30px;height:30px;" data-reactid=".0.a.1.b.0.0.0"></div>-->
+                            <!--<div style="background:#a2d016;width:30px;height:0;" data-reactid=".0.a.1.b.0.0.1"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div style="position:absolute;width:100%;height:100%;left:0;top:0;cursor:pointer;font-size:14px;"-->
+                         <!--data-reactid=".0.a.1.b.1"><span data-reactid=".0.a.1.b.1.0">7</span><span-->
+                            <!--data-reactid=".0.a.1.b.1.1">月</span></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"-->
+             <!--data-reactid=".0.b">-->
+            <!--<div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#69D6F5;"-->
+                 <!--data-reactid=".0.b.0">-->
+                <!--<div style="float:left;margin-left:10px;" data-reactid=".0.b.0.0"><img-->
+                        <!--src="./files/card_circle_3.png"-->
+                        <!--style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"-->
+                        <!--data-reactid=".0.b.0.0.0"><span data-reactid=".0.b.0.0.1">面试视频</span></div>-->
+                <!--<div style="float:right;margin-right:10px;" data-reactid=".0.b.0.1"><span-->
+                        <!--data-reactid=".0.b.0.1.0"><span data-reactid=".0.b.0.1.0.0">共</span><span-->
+                        <!--data-reactid=".0.b.0.1.0.1">1</span><span data-reactid=".0.b.0.1.0.2">个视频</span></span><img-->
+                        <!--src="./files/right_white.png"-->
+                        <!--style="width:8px;display:inline-block;margin-left:5px;position:relative;top:2px;"-->
+                        <!--data-reactid=".0.b.0.1.1"></div>-->
+            <!--</div>-->
+            <!--<div style="clear:both;background:#fff;color:#333;" data-reactid=".0.b.1">-->
+                <!--<div style="white-space:nowrap;overflow:auto;padding:10px;" data-reactid=".0.b.1.0"><img-->
+                        <!--src="./files/image-be5bf9d2dd8cbf2f972f4054fe6ecd96.jpg@!big"-->
+                        <!--style="height:70px;width:70px;cursor:pointer;display:inline-block;margin-right:10px;border-radius:5px;"-->
+                        <!--data-reactid=".0.b.1.0.0"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.c">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#F16B57;"
+                 data-reactid=".0.c.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.c.0.0"><img
+                        src="./files/card_circle_2.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.c.0.0.0"><span data-reactid=".0.c.0.0.1">菩提果理论考试</span></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;padding-bottom:20px;" data-reactid=".0.c.1">
+                <div style="position:relative;height:80px;" data-reactid=".0.c.1.0"><img
+                        style="width:80px;position:absolute;top:10px;left:10px;"
+                        src="./files/exam_lianghao.png" data-reactid=".0.c.1.0.0">
+                    <div style="position:absolute;left:120px;top:20px;line-height:1.5;" data-reactid=".0.c.1.0.1">
+                        <table data-reactid=".0.c.1.0.1.0">
+                            <tbody data-reactid=".0.c.1.0.1.0.0">
+                            <tr data-reactid=".0.c.1.0.1.0.0.0">
+                                <td data-reactid=".0.c.1.0.1.0.0.0.0">时间：</td>
+                                <td data-reactid=".0.c.1.0.1.0.0.0.1">2018-09-10</td>
+                            </tr>
+                            <tr data-reactid=".0.c.1.0.1.0.0.1">
+                                <td data-reactid=".0.c.1.0.1.0.0.1.0">考试时间：&nbsp;&nbsp;</td>
+                                <td data-reactid=".0.c.1.0.1.0.0.1.1"><span data-reactid=".0.c.1.0.1.0.0.1.1.0"> </span><span
+                                        data-reactid=".0.c.1.0.1.0.0.1.1.1">27</span><span
+                                        data-reactid=".0.c.1.0.1.0.0.1.1.2">分钟</span></td>
+                            </tr>
+                            <tr data-reactid=".0.c.1.0.1.0.0.2">
+                                <td data-reactid=".0.c.1.0.1.0.0.2.0">成绩：</td>
+                                <td data-reactid=".0.c.1.0.1.0.0.2.1"><span data-reactid=".0.c.1.0.1.0.0.2.1.0"> </span><span
+                                        data-reactid=".0.c.1.0.1.0.0.2.1.1">优秀</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.d">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#6BD4FA;"
+                 data-reactid=".0.d.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.d.0.0"><img
+                        src="./files/card_circle_2.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.d.0.0.0"><span data-reactid=".0.d.0.0.1">菩提果学历</span></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;" data-reactid=".0.d.1">
+                <div data-reactid=".0.d.1.0">
+                    <div style="height:35px;background:#fff;cursor:pointer;position:relative;width:100%;"
+                         data-reactid=".0.d.1.0.0"><img src="./files/e777c4cca9df9a1eea8295040e5d505e.jpg"
+                                                        style="margin-left:10px;vertical-align:middle;width:20px;height:20px;"
+                                                        data-reactid=".0.d.1.0.0.0"><span
+                            style="display:inline-block;margin-left:10px;font-size:14px;color:#666666;line-height:35px;"
+                            data-reactid=".0.d.1.0.0.1">产后修复基础班</span><span
+                            style="display:inline-block;position:absolute;right:10px;line-height:32px;color:#88bd4e;"
+                            data-reactid=".0.d.1.0.0.2"><span data-reactid=".0.d.1.0.0.2.0">+</span><span
+                            data-reactid=".0.d.1.0.0.2.1">30</span></span></div>
+                    <div style="height:35px;background:#f7f7f7;cursor:pointer;position:relative;width:100%;"
+                         data-reactid=".0.d.1.0.1"><img src="./files/374de6cbf37f303fac4b8cc4df557122.jpg"
+                                                        style="margin-left:10px;vertical-align:middle;width:20px;height:20px;"
+                                                        data-reactid=".0.d.1.0.1.0"><span
+                            style="display:inline-block;margin-left:10px;font-size:14px;color:#666666;line-height:35px;"
+                            data-reactid=".0.d.1.0.1.1">星级服务实训班</span><span
+                            style="display:inline-block;position:absolute;right:10px;line-height:32px;color:#88bd4e;"
+                            data-reactid=".0.d.1.0.1.2"><span data-reactid=".0.d.1.0.1.2.0">+</span><span
+                            data-reactid=".0.d.1.0.1.2.1">15</span></span></div>
+                    <div style="height:35px;background:#fff;cursor:pointer;position:relative;width:100%;"
+                         data-reactid=".0.d.1.0.2"><img src="./files/3e1a2b0ef946dc1f4e6e0ee73bed90e7.jpg"
+                                                        style="margin-left:10px;vertical-align:middle;width:20px;height:20px;"
+                                                        data-reactid=".0.d.1.0.2.0"><span
+                            style="display:inline-block;margin-left:10px;font-size:14px;color:#666666;line-height:35px;"
+                            data-reactid=".0.d.1.0.2.1">小儿推拿实用技能课</span><span
+                            style="display:inline-block;position:absolute;right:10px;line-height:32px;color:#88bd4e;"
+                            data-reactid=".0.d.1.0.2.2"><span data-reactid=".0.d.1.0.2.2.0">+</span><span
+                            data-reactid=".0.d.1.0.2.2.1">5</span></span></div>
+                </div>
+                <!--<div style="height:28px;line-height:28px;background:#fff;text-align:center;color:#A2D016;font-size:13px;cursor:pointer;width:100%;"-->
+                     <!--data-reactid=".0.d.1.1"><span data-reactid=".0.d.1.1.0">展开</span><img-->
+                        <!--src="./files/xl_down.png" style="width:15px;height:7px;" data-reactid=".0.d.1.1.1">-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.e">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#A2D016;"
+                 data-reactid=".0.e.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.e.0.0"><img
+                        src="./files/card_circle_1.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.e.0.0.0"><span data-reactid=".0.e.0.0.1">经验分享</span></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;padding:10px;" data-reactid=".0.e.1">
+                <table style="width:100%;line-height:2;" data-reactid=".0.e.1.0">
+                    <tbody data-reactid=".0.e.1.0.0">
+                    <tr data-reactid=".0.e.1.0.0.0">
+                        <td data-reactid=".0.e.1.0.0.0.0"><span data-reactid=".0.e.1.0.0.0.0.0">发表文章: </span><span
+                                data-reactid=".0.e.1.0.0.0.0.1">13</span><span data-reactid=".0.e.1.0.0.0.0.2">次</span>
+                        </td>
+                        <td data-reactid=".0.e.1.0.0.0.1"><span data-reactid=".0.e.1.0.0.0.1.0">热心回复: </span><span
+                                data-reactid=".0.e.1.0.0.0.1.1">246</span><span data-reactid=".0.e.1.0.0.0.1.2">次</span>
+                        </td>
+                    </tr>
+                    <tr data-reactid=".0.e.1.0.0.1">
+                        <td data-reactid=".0.e.1.0.0.1.0"><span data-reactid=".0.e.1.0.0.1.0.0">获得推荐: </span><span
+                                data-reactid=".0.e.1.0.0.1.0.1">8</span><span data-reactid=".0.e.1.0.0.1.0.2">次</span>
+                        </td>
+                        <td data-reactid=".0.e.1.0.0.1.1"><span data-reactid=".0.e.1.0.0.1.1.0">获得称赞: </span><span
+                                data-reactid=".0.e.1.0.0.1.1.1">374</span><span data-reactid=".0.e.1.0.0.1.1.2">次</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="margin:10px;box-shadow:0px 1px 1px 1px #e7ebd0;color:#fff;border-radius:5px;overflow:hidden;"
+             data-reactid=".0.f">
+            <div style="height:30px;color:#fff;line-height:30px;font-size:14px;cursor:pointer;background:#F16B57;"
+                 data-reactid=".0.f.0">
+                <div style="float:left;margin-left:10px;" data-reactid=".0.f.0.0"><img
+                        src="./files/card_circle_2.png"
+                        style="width:12px;display:inline-block;margin-right:3px;position:relative;top:2px;"
+                        data-reactid=".0.f.0.0.0"><span data-reactid=".0.f.0.0.1">联系方式</span></div>
+            </div>
+            <div style="clear:both;background:#fff;color:#333;padding:10px;line-height:2;" data-reactid=".0.f.1"><span
+                    data-reactid=".0.f.1.0">手机微信同号</span><br data-reactid=".0.f.1.1"><img
+                    style="width:14px;position:relative;top:1px;display:inline-block;margin-right:5px;"
+                    src="./files/phone.png" data-reactid=".0.f.1.2"><span data-reactid=".0.f.1.3"><a
+                    href="tel://400-618-8835" data-reactid=".0.f.1.3.0">18696024690</a></span></div>
+        </div>
+        <!--<div style="padding-bottom:50px;" data-reactid=".0.g">-->
+            <!--<div style="position:fixed;bottom:0;left:0;width:100%;height:40px;color:#333;background:#fff;border-top:1px solid #ddd;"-->
+                 <!--data-reactid=".0.g.0">-->
+                <!--<table style="width:100%;text-align:center;line-height:40px;" data-reactid=".0.g.0.0">-->
+                    <!--<tbody data-reactid=".0.g.0.0.0">-->
+                    <!--<tr data-reactid=".0.g.0.0.0.0">-->
+                        <!--<td style="cursor:pointer;border-right:1px solid #ddd;width:15vw;"-->
+                            <!--data-reactid=".0.g.0.0.0.0.0">-->
+                            <!--<div data-reactid=".0.g.0.0.0.0.0.0"><img-->
+                                    <!--style="display:block;width:20px;margin:0 auto;vertical-align:middle;"-->
+                                    <!--src="./files/index.png" data-reactid=".0.g.0.0.0.0.0.0.0">-->
+                                <!--<p style="font-size:10px;margin:0;margin-top:4px;line-height:10px;"-->
+                                   <!--data-reactid=".0.g.0.0.0.0.0.0.1">首页</p></div>-->
+                        <!--</td>-->
+                        <!--<td style="border-right:1px solid #ddd;cursor:pointer;line-height:40px;width:15vw;"-->
+                            <!--data-reactid=".0.g.0.0.0.0.1"><a style="display:block;width:25px;height:25px;margin:0 auto;"-->
+                                                             <!--href="tel:18618422990" data-reactid=".0.g.0.0.0.0.1.0"><img-->
+                                <!--style="display:block;width:25px;margin:0 auto;" src="./files/phone(1).png"-->
+                                <!--data-reactid=".0.g.0.0.0.0.1.0.0"></a></td>-->
+                        <!--<td style="cursor:pointer;border-right:1px solid #ddd;width:15vw;"-->
+                            <!--data-reactid=".0.g.0.0.0.0.2">-->
+                            <!--<div data-reactid=".0.g.0.0.0.0.2.0"><img-->
+                                    <!--style="display:block;width:20px;margin:0 auto;vertical-align:middle;"-->
+                                    <!--src="./files/unfav.png" data-reactid=".0.g.0.0.0.0.2.0.0">-->
+                                <!--<p style="font-size:10px;margin:0;margin-top:4px;line-height:10px;"-->
+                                   <!--data-reactid=".0.g.0.0.0.0.2.0.1">收藏</p></div>-->
+                        <!--</td>-->
+                        <!--<td style="cursor: pointer; border-right: 1px solid rgb(221, 221, 221); line-height: 40px; background-color: rgb(173, 205, 65); color: white; width: 35vw;"-->
+                            <!--data-reactid=".0.g.0.0.0.0.3">视频面试-->
+                        <!--</td>-->
+                        <!--<td style="cursor: pointer; border-right: 1px solid rgb(221, 221, 221); line-height: 40px; background-color: rgb(173, 205, 65); color: white; width: 35vw;"-->
+                            <!--data-reactid=".0.g.0.0.0.0.4">在线签约-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+<script>
+</script>
+<script src="./files/jweixin-1.0.0.js"></script>
+<script src="./files/alipayjsapi.min.js"></script>
+<script src="./files/jquery-2.1.3.min.js"></script>
+<script src="./files/detect-ad.js"></script>
+<script src="./files/gt.js"></script>
+<script src="./files/app.js"></script>
+<script src="./files/run.js"></script>
+<script>
+    WhenJSReady()
+</script>
+
+
+<!--<script>-->
+    <!--var _hmt = _hmt || [];-->
+    <!--(function () {-->
+        <!--var hm = document.createElement("script");-->
+        <!--hm.src = "//hm.baidu.com/hm.js?40d7dada4cec3dad8cc064ab46ba5e88";-->
+        <!--var s = document.getElementsByTagName("script")[0];-->
+        <!--s.parentNode.insertBefore(hm, s);-->
+    <!--})();-->
+<!--</script>-->
+
+
+</body>
+</html>

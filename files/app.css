@@ -1,0 +1,173 @@
+body {
+   /* background: #F2F2F2; */
+   background: #f2f2f2; 
+	font-family: Arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+	font-size: 14px;
+	color: #666;
+	padding-bottom: 20;
+    word-break: break-all;
+}
+
+
+.html img {
+	max-width: 100%;
+}
+
+.general {
+	padding: 10px 20px;
+}
+
+input[type=text] {   
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {   
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.ani-left {
+    -webkit-transition: left 0.5s;
+}
+
+.transition-h {
+    -webkit-transition: height 0.5s;   
+}
+
+/* 砍价活动的转盘 */
+.needle{
+    position: absolute;
+    width: 160px;
+    top: 149px;
+    left: 71px;
+    
+}
+.turningNeedle0{
+    position: absolute;
+    width: 160px;
+    top: 149px;
+    left: 71px;
+    animation: wheelRotate0 5s;
+    animation-iteration-count:1;
+    -ms-animation:wheelRotate0 5s; /* IE */
+    -ms-animation-iteration-count:1; /* IE */
+    -moz-animation:wheelRotate0 5s; /* Firefox */
+    -moz-animation-iteration-count:1; /* Firefox */
+    -webkit-animation:wheelRotate0 5s; /* Safari and Chrome */ 
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+    transform-origin: 80px 80px;
+    transform: rotate(1910deg);
+    -webkit-transform: rotate(1910deg);
+}
+@keyframes wheelRotate0{
+    0%  {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -ms-transform: rotate(1910deg);
+            -moz-transform: rotate(1910deg);
+            -webkit-transform: rotate(1910deg);
+        }
+}
+@-webkit-keyframes wheelRotate0{
+    0%  {
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -webkit-transform: rotate(1910deg);
+        }
+}
+
+.turningNeedle1{
+    position: absolute;
+    width: 160px;
+    top: 149px;
+    left: 71px;
+    animation: wheelRotate1 5s;
+    animation-iteration-count:1;
+    -ms-animation:wheelRotate1 5s; /* IE */
+    -ms-animation-iteration-count:1; /* IE */
+    -moz-animation:wheelRotate1 5s; /* Firefox */
+    -moz-animation-iteration-count:1; /* Firefox */
+    -webkit-animation:wheelRotate1 5s; /* Safari and Chrome */ 
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+    transform-origin: 80px 80px;
+    transform: rotate(2000deg);
+    -webkit-transform: rotate(2000deg);
+}
+@keyframes wheelRotate1{
+    0%  {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -ms-transform: rotate(2000deg);
+            -moz-transform: rotate(2000deg);
+            -webkit-transform: rotate(2000deg);
+        }
+}
+@-webkit-keyframes wheelRotate1{
+    0%  {
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -webkit-transform: rotate(2000deg);
+        }
+}
+
+.turningNeedle2{
+    position: absolute;
+    width: 160px;
+    top: 149px;
+    left: 71px;
+    animation: wheelRotate2 5s;
+    animation-iteration-count:1;
+    -ms-animation:wheelRotate2 5s; /* IE */
+    -ms-animation-iteration-count:1; /* IE */
+    -moz-animation:wheelRotate2 5s; /* Firefox */
+    -moz-animation-iteration-count:1; /* Firefox */
+    -webkit-animation:wheelRotate2 5s; /* Safari and Chrome */ 
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+    transform-origin: 80px 80px;
+    transform: rotate(2090deg);
+    -webkit-transform: rotate(2090deg);
+}
+@keyframes wheelRotate2{
+    0%  {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -ms-transform: rotate(2090deg);
+            -moz-transform: rotate(2090deg);
+            -webkit-transform: rotate(2090deg);
+        }
+}
+@-webkit-keyframes wheelRotate2{
+    0%  {
+            -webkit-transform: rotate(0deg);
+        }
+    100% {
+            -webkit-transform: rotate(2090deg);
+        }
+}
+
+
+
+/* 砍价活动的转盘 */
+
